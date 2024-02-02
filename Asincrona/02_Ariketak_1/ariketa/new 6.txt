@@ -1,0 +1,18 @@
+Algoritmoa 6ariketa
+
+Datuak
+errad, altue, azal, bolu, PI zenbaki_hamartarra
+
+Hasiera
+Idatzi "Jarri zilindroaren erradioa:"
+Irakurri errad
+Idatzi "Jarri zilindroaren altuera:"
+Irakurri altue
+PI <- 3.14159275359
+azal <- 2*pi*errad*altue+2*pi*(errad*errad)
+bolu <- pi*(errad*errad)*altue
+
+Idatzi azal+"azalera da eta bolumena"+bolu
+
+
+Bukatu algoritmoa

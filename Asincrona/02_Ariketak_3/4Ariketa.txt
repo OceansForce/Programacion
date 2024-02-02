@@ -1,0 +1,22 @@
+Algoritmoa 4ariketa
+
+Datuak
+zenb1
+larri, xehe, zenbaki_osoa
+
+Hasiera
+	
+	Bitartean zenb1!=$
+		Idatzi "Jarri karaktere bat"
+		Irakurri zenb1
+		
+		Baldin (zenb1== A)&&(zenb1== E)&&(zenb1== I)&&(zenb1== O)&&(zenb1== U)
+			larri <- larri+1
+			
+		Bestela baldin (zenb1== a)&&(zenb1== e)&&(zenb1== i)&&(zenb1== o)&&(zenb1== u)
+			xehe <- xehe+1
+	Bukatu bitartean
+		
+	Idatzi larri+"Bokal larri egon dira"
+	Idatzi xehe+"Bokal xehe egon dira"
+Bukatu algoritmoa

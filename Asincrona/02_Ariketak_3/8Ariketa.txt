@@ -1,0 +1,21 @@
+Algoritmoa 8ariketa
+
+Datuak
+zenb1, zenb2, fact, zenbaki_osoa
+
+Hasiera
+	
+	Idatzi "Jarri zenbaki bat:"
+	Irakurri zenb1
+	
+	Idatzi "Jarri beste zenbaki bat:"
+	Irakurri zenb2
+
+	kont <- 0
+	batura <- 0
+	Errepikatu kont <- zenb1 etik  zenb2 era 1 rekin Egin
+		batura <- batura + kont
+		
+	Bukatu errepikatu
+		
+Bukatu algoritmoa

@@ -1,0 +1,17 @@
+Algoritmoa 3ariketa
+
+Datuak
+zenb1, zenb2, zenbaki_osoa
+
+Hasiera
+	Idatzi "Jarri zenbaki bat:"
+		Irakurri zenb1
+	Idatzi "Jarri beste zenbaki bat:"
+		Irakurri zenb2
+	
+	Bitartean zenb1%3 Egin
+	Idatze zenb1
+	zenb1 <- zenb1+1
+	Bukatu bitartean
+
+Bukatu algoritmoa

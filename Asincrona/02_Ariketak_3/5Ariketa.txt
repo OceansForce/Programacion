@@ -1,0 +1,22 @@
+Algoritmoa 5ariketa
+
+Datuak
+zenb1, biko, bakoi, zenbaki_osoa
+
+Hasiera
+	
+	Bitartean zenb1!=0
+		Idatzi "Jarri zenbaki bat"
+		Irakurri zenb1
+		
+		Baldin (zenb1%2)==0
+			biko <- biko+1
+			
+		Bestela
+			bakoi <- bakoi+1
+	Bukatu bitartean
+		
+	Idatzi biko+"Zenbaki bikoiti egon dira"
+	Idatzi bakoi+"Zenbaki bakoi egon dira"
+
+Bukatu algoritmoa

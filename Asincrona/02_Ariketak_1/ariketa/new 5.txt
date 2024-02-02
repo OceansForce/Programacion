@@ -1,0 +1,14 @@
+Algoritmoa 5ariketa
+
+Datuak
+faren, zenbaki_hamartarra
+centi, zenbaki_hamartarra
+
+Hasiera
+Idatzi "Zenbat farenheit egiten ditu"
+Irakurri faren
+
+centi <- (faren-32)*5/9
+Idatzi faren+"zentigradu egiten ditu"
+
+Bukatu algoritmoa

@@ -1,0 +1,17 @@
+Algoritmoa 3ariketa
+
+Datuak
+	nota, zenbaki_osoa
+
+Hasiera
+	Baldin nota<5
+		Idatzi "Kalifikazioa GUTXI"
+	Bestela baldin (nota>=5)&&(nota<6)
+		Idatzi "Kalifikazioa NAHIKOA"
+	Bestela baldin (nota>=6)&&(nota<7)
+		Idatzi "Kalifikazioa ONGI"
+	Bestela baldin (nota>=7)&&(nota<9)
+		Idatzi "Kalifikazioa OSO ONGI"
+	Bestela baldin nota>=9
+		Idatzi "Kalifikazioa BIKAIN"
+Bukatu algoritmoa

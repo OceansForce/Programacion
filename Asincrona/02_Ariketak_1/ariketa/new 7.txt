@@ -1,0 +1,14 @@
+Algoritmoa 7ariketa
+
+Datuak 
+katet1, katet2, hipote zenbaki_hamartarra
+Hasiera
+
+Idatzi "Heman a katetoa"
+Irakurri katet1
+Idatzi "Heman b katetoa"
+Irakurri katet2
+
+hipote <- erro[(katet1*katet1)+(katet2*katet2)]
+Idatzi "Hipotenusa"+hipote+"da"
+Bukatu algoritmoa

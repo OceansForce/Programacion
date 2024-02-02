@@ -1,0 +1,18 @@
+Algoritmoa 7ariketa
+
+Datuak
+
+urt, urt2 zenbaki_osoa
+
+Hasiera
+
+	Idatzi "Jarri urte bat:"
+		Irakurri urt
+	
+	Baldin (urt%4)==0||(urt%400)==0
+	Idatzi "Bisurtea da"
+	
+	Baldin bestea (urt%100)==0
+	Idatzi "Ez da bisurtea"
+
+Bukatu algoritmoa

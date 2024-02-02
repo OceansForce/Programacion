@@ -1,0 +1,35 @@
+Algoritmoa 8ariketa
+
+Datuak
+
+	zenb1, zenb2, zenb3, zenbaki_osoa
+	
+Hasiera
+
+	Idatzi "Jarri zenbaki bat:"
+	Irakurri zenb1
+
+	Idatzi "Jarri zenbaki bat:"
+	Irakurri zenb2
+
+	Idatzi "Jarri zenbaki bat:"
+	Irakurri zenb3
+	
+	Baldin zenb1<zenb2
+	dat<-zenb2
+	zenb2<-zenb1
+	zenb1<-dat
+	
+	Baldin zenb1<zenb3
+	dat<- zenb3
+	zenb3<- zenb1
+	zenb1<- dat
+	
+	Baldin zenb2<zenb3
+	dat<- zenb3
+	zenb3<- zenb2
+	zenb2<- dat
+	
+	Idatzi zenb1+zenb3 "Txikienetik handienera"
+
+Bukatu algoritmoa

@@ -1,0 +1,18 @@
+Algoritmoa 4ariketa
+
+Datuak 
+
+presi, orda, zenbaki_hamartarra
+
+Hasiera
+
+	presi <- 20
+	Idatzi "presioa"+presi+"euro dira"
+	presi <- 20-orda
+	
+	Baldin presi==0
+		Idatzi "Sobrarik ez"
+	Bestela baldin presi>orda
+		Idatzi "Dirua falta da"+presi
+
+Bukatu algoritmoa

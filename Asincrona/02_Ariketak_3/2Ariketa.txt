@@ -1,0 +1,12 @@
+Algoritmoa 2ariketa
+
+Datuak
+zenb1, zenbaki_osoa
+
+Hasiera
+	
+	Errepikatu zenb1 <- 100 etik 0 era -1 rekin Egin
+		Idatzi zenb1
+	Bukatu errepikatu
+
+Bukatu algoritmoa

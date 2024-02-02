@@ -1,0 +1,20 @@
+Algoritmoa 3ariketa
+
+Datuak
+
+zenb1, zenb2, zenb3, zenbaki_osoa
+media zenbaki_hamartarra
+
+Hasiera
+
+Idatzi "Aukeratu zenbaki oso"
+Irakurri zenb1
+Idatzi "Aukeratu zenbaki oso"
+Irakurri zenb2
+Idatzi "Aukeratu zenbaki oso"
+Irakurri zenb3
+
+media <- (zenb1+zenb2+zenb3)/3
+Idatzi "Zenbaki horien media"+media
+
+Bukatu algoritmoa

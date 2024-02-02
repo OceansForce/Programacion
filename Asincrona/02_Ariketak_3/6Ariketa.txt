@@ -1,0 +1,26 @@
+Algoritmoa 6ariketa
+
+Datuak
+zenb1, zenb2, fact, zenbaki_osoa
+
+Hasiera
+
+	Idatzin "Jarri zenbaki oso bat:"
+		Irakurri zenb1
+		
+	Baldin 0>zenb1
+		Idatzi "Jarri 0 baino zenbaki handiago bat:"
+			Irakurri zenb1
+	
+	zenb2 <- 1
+	fact <- 1
+	
+	Bitartean zenb1>zenb2 Egin
+		zenb2 <- zenb2+1
+		fact <- fact*zenb2
+	Bukatu bitartean
+	
+	Idatzi "Ahu da bere zenbaki faktoriala"+fact
+		
+	
+Bukatu algoritmoa

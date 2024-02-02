@@ -1,0 +1,15 @@
+Algoritmoa 2ariketa
+
+Datuak
+zenb1, zenbaki_osoa
+Hasiera
+	Idatzi "Jarri zenbaki bat:"
+	Irakurri zenb1
+	
+	Baldin zenb1%2==0
+		Idatzi "Jarri duzun zenbakia Bikoitia da"
+	Bestela
+		Idatzi "Jarri duzun zenbakia Bakoitia da"
+	
+		
+Bukatu algoritmoa

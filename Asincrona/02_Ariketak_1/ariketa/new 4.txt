@@ -1,0 +1,20 @@
+Algoritmoa 4ariketa
+
+Datuak
+
+zenb1, zenb2, zenb3, zenbaki_osoa
+media zenbaki_hamartarra
+
+Hasiera
+
+Idatzi "Jarri nota"
+Irakurri zenb1
+Idatzi "Jarri nota"
+Irakurri zenb2
+Idatzi "Jarri nota"
+Irakurri zenb3
+
+media <- [(zenb1*30)/100]+[(zenb2*20)/100]+[(zenb3*50)/100]
+Idatzi "Zure noten media"+media
+
+Bukatu algoritmoa

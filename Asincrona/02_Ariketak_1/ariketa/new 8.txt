@@ -1,0 +1,12 @@
+Algoritmoa 8ariketa
+
+Datuak 
+pertso, esku, zenbaki_osoa
+
+Hasiera
+Idatzi "Zenbat pertsona daude bileran:"
+Irakurri pertso
+
+esku <- [pertso*(pertso-1)]/2
+Idatzi esku+"esku heman dira"
+Bukatu algoritmoa

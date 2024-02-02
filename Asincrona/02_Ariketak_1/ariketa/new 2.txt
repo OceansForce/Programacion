@@ -1,0 +1,21 @@
+Algoritmoa 2ariketa
+
+Datuak
+
+	pertsonak, neskak, mutilak,  zenbaki_osoa
+	neskakEran, mutilEran zenbaki_hamartarra
+	 
+	
+Hasiera
+	
+	Idatzi "Neska kantitatea"
+	Irakurri neskak
+	Idatzi "Mutil kantitatea"
+	Irakurri mutilak
+	
+	neskakEran <- neskak*100/ (neskak + mutilak)
+	mutilEran <- 100 - neskakeran
+	
+	Idatzi "Neska portzentaila" + neskakEran
+	Idatzi "Mutil portzentaila" + mutilEran
+Bukatu algoritmoa

@@ -1,0 +1,18 @@
+Algoritmoa 7ariketa
+
+Datuak
+perts1, zenb2, fact, zenbaki_osoa
+
+Hasiera
+
+	Idatzin "Zenbat pertsona daude:"
+		Irakurri perts1
+	
+	fact <- 0
+	
+	Errepikatu zenb2 <- 1 etik  perts1-1 era 1 rekin Egin
+		fact <- fact+zenb2
+		
+	Bukatu errepikatu
+	
+Bukatu algoritmoa

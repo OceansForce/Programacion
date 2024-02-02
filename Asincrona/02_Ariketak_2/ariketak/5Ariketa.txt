@@ -1,0 +1,51 @@
+Algoritmoa 5ariketa 
+
+Datuak 
+
+zenb1, zenbaki_osoa
+
+Hasiera 
+
+	Idatzi "Jarri zenbaki bat"
+	Irakurri zenb1
+	
+	Baldin zenb1==0||zenb1>12
+	Idatzi "1 etik 12 arteko zenbakia izan behar du"
+	
+	Bestela baldin zenb1==1
+	Idatzi "URTARRILA"
+	
+	bestela Baldin zenb1==2
+	Idatzi "OTSAILA"
+	
+	bestela Baldin zenb1==3
+	Idatzi "MARTXOA"
+	
+	bestela Baldin zenb1==4
+	Idatzi "APIRILA"
+	
+	bestela Baldin zenb1==5
+	Idatzi "MAIATZA"
+	
+	bestela Baldin zenb1==6
+	Idatzi "EKAINA"
+	
+	bestela Baldin zenb1==7
+	Idatzi "UZTAILA"
+	
+	bestela Baldin zenb1==8
+	Idatzi "ABUZTUA"
+	
+	bestela Baldin zenb1==9
+	Idatzi "IRAILA"
+	
+	bestela Baldin zenb1==10
+	Idatzi "URRIA"
+	
+	bestela Baldin zenb1==11
+	Idatzi "AZAROA"
+	
+	bestela Baldin zenb1==12
+	Idatzi "ABENDUA"
+
+Bukatu algoritmoa

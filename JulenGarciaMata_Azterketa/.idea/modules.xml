@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ariekta7/Ariekta7.iml" filepath="$PROJECT_DIR$/Ariekta7/Ariekta7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ariketa5/Ariketa5.iml" filepath="$PROJECT_DIR$/Ariketa5/Ariketa5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ariketa9/Ariketa9.iml" filepath="$PROJECT_DIR$/Ariketa9/Ariketa9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JulenGarciaMata_Azterketa.iml" filepath="$PROJECT_DIR$/.idea/JulenGarciaMata_Azterketa.iml" />
+    </modules>
+  </component>
+</project>

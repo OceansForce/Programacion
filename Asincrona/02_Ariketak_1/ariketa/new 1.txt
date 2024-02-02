@@ -1,0 +1,20 @@
+Algoritmoa 1ariketa
+
+Datuak
+
+	zenb zenbaki_osoa
+	bikoitza zenbaki_osoa
+	hirukoitza zenbaki_osoa
+	
+Hasiera
+
+	Idatzi "Sartu zenbaki oso bat:"
+	zenb <- zenbaki_osoa + zenbaki_osoa
+	bikoitza <- zenb
+	zenb <- zenbaki_osoa + zenbaki_osoa + zenbaki_osoa
+	hirukoitza <- zenb
+	Irakurri bikoitza
+	Irakurri hirukoitza
+	
+	
+Bukatu algoritmoa
