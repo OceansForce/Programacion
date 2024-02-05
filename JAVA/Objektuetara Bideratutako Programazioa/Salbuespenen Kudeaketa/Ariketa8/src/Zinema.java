@@ -10,20 +10,12 @@ public class Zinema {
 
 
     public Zinema(String izena, int aretoa) throws Salbuespenak{
-        try {
-            if (izena.equals("")){
-                throw new Salbuespenak("Zinemaren izena ezin da hutsa jarri");
-            }
-        }catch (Salbuespenak e){
-            System.err.println("Error= "+e.getMessage());
+        if (izena.equals("")){
+            throw new Salbuespenak("Zinemaren izena ezin da hutsa jarri");
+        }else if (aretoa<=0){
+            throw new Salbuespenak("Zinemaren aretoak ezin dira izan 0 edo negatibo");
         }
-        try {
-            if (aretoa<=0){
-                throw new Salbuespenak("Zinemaren aretoak ezin dira izan 0 edo negatibo");
-            }
-        }catch (Salbuespenak e){
-            System.err.println("Error= "+e.getMessage());
-        }
+
         this.izena = izena;
         this.pelikulak=new ArrayList<>();
         this.aretoa= new Pelikula[aretoa+1];

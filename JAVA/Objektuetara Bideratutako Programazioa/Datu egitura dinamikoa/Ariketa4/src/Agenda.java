@@ -1,21 +1,21 @@
 import java.util.*;
 
 public class Agenda {
-Scanner sc = new Scanner(System.in);
+
     private HashMap<String, String[]> sarrerak;
-     private final int sarraKopMAX ;
+    private final int sarraKopMAX ;
 
     public Agenda(int sarraKopMAX) {
         this.sarrerak = new HashMap<>();
         this.sarraKopMAX = sarraKopMAX;
     }
 
-    void gehituSarrera(String izena, String[] telefonoa){
-
+    private void gehituSarrera(String izena, String[] telefonoa){
+        Scanner sc = new Scanner(System.in);
         if (sarraKopMAX==sarrerak.size()){
             System.out.println("Agenda beteta dago");
         }
-        else if (this.sarrerak.containsValue(telefonoa)){
+        else if (this.sarrerak.containsKey(izena)){
             System.out.println("“Zure agendan "+izena+"ren ondorengo\n" +
                     "zenbakiak gordeta daude: "+ Arrays.toString(telefonoa) +". Telefono " +
                     "berriengatik aldatu nahi dituzu? Bai/Ez.” ");
@@ -28,23 +28,23 @@ Scanner sc = new Scanner(System.in);
         }
     }
 
-    void erakutsi(){
-        Iterator<String[]> it1 = this.sarrerak.values().iterator();
+    private void erakutsi(){
         Iterator<String> it2 = this.sarrerak.keySet().iterator();
 
-        while (it1.hasNext() && it2.hasNext()) {
-            System.out.println(it2.next()+"= "+Arrays.toString(it1.next()));
+        while ( it2.hasNext()) {
+            String gako= it2.next();
+            System.out.println(gako+"= "+Arrays.toString(sarrerak.get(gako)));
+
             System.out.println("******************************************************");
         }
     }
 
-    void bilatuizena (String izena){
+    private String bilatuizena (String izena){
         if (sarrerak.get(izena)!=null){
-            System.out.println(izena+"= "+Arrays.toString(sarrerak.get(izena)));
+            return izena+"= "+Arrays.toString(sarrerak.get(izena));
         }else {
-            System.out.println(izena+" ez dago agendan");
+           return  izena+" ez dago agendan";
         }
-
     }
 
    /* void zenbakiKopurua(String telefonoa){
@@ -62,7 +62,7 @@ Scanner sc = new Scanner(System.in);
         System.out.println(pertsonaKOP+" Pertsonak dute telefono hori.");
     }*/
     
-    void zenbakiKopurua(String telefonoa){
+    private int zenbakiKopurua(String telefonoa){
         int pertsonaKOP=0;
         Iterator<String> it = this.sarrerak.keySet().iterator();
 
@@ -76,8 +76,20 @@ Scanner sc = new Scanner(System.in);
                 }
             }
         }
-        System.out.println(pertsonaKOP+" Pertsonak dute telefono hori.");
+       return pertsonaKOP;
     }
 
+    void main(Agenda a1){
+        String[] telefonoak= {"5456435","32","8695769854"};
+        String[] telefonoak2= {"32","435567676","09689076"};
+        String[] telefonoak3= {"7879879","46534230","32"};
+        a1.gehituSarrera("Julen", telefonoak);
+        a1.gehituSarrera("Iker", telefonoak2);
+        a1.gehituSarrera("Manex", telefonoak3);
+        a1.erakutsi();
+        a1.bilatuizena("Julen");
+        a1.bilatuizena("Manex");
+        a1.zenbakiKopurua("32");
+    }
 
 }
