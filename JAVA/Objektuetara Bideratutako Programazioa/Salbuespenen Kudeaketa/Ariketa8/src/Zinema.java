@@ -9,7 +9,21 @@ public class Zinema {
     int aretoaKop=1;
 
 
-    public Zinema(String izena, int aretoa) {
+    public Zinema(String izena, int aretoa) throws Salbuespenak{
+        try {
+            if (izena.equals("")){
+                throw new Salbuespenak("Zinemaren izena ezin da hutsa jarri");
+            }
+        }catch (Salbuespenak e){
+            System.err.println("Error= "+e.getMessage());
+        }
+        try {
+            if (aretoa<=0){
+                throw new Salbuespenak("Zinemaren aretoak ezin dira izan 0 edo negatibo");
+            }
+        }catch (Salbuespenak e){
+            System.err.println("Error= "+e.getMessage());
+        }
         this.izena = izena;
         this.pelikulak=new ArrayList<>();
         this.aretoa= new Pelikula[aretoa+1];
@@ -28,7 +42,7 @@ public class Zinema {
         }
     }*/
     
-    int pelikularenAretoa (String izena, int urtea, int iraupena){
+    int pelikularenAretoa (String izena, int urtea, int iraupena) throws Salbuespenak {
         Pelikula peli = new Pelikula(izena ,urtea, iraupena);
         for (int i=1 ; i<this.aretoa.length; i++){
             if (this.aretoa[i]!=null && this.aretoa[i].equals(peli)){

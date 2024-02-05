@@ -9,13 +9,24 @@ public class Pelikula extends Object{
 
     public Pelikula(String izenburua, int ekoizpen_urtea, int iraupena) throws Salbuespenak{
        try {
-           this.izenburua=izenburua;
-           this.ekoizpen_urtea=ekoizpen_urtea;
-           this.iraupena=iraupena;
+           if (izenburua.equals("")){
+               throw new Salbuespenak("Ezin da jarri izenburu hutsa jarri");
+           }
+
        }catch (Salbuespenak e){
-
+           System.err.println("Errorea= "+e.getMessage());
        }
+       try {
+            if (ekoizpen_urtea<0 || iraupena<0){
+                throw new Salbuespenak("Ezin da jarri urtea edo iraupera negatiboan");
+            }
 
+       }catch (Salbuespenak e){
+            System.err.println("Errorea= "+e.getMessage());
+       }
+        this.izenburua=izenburua;
+        this.ekoizpen_urtea=ekoizpen_urtea;
+        this.iraupena=iraupena;
     }
 
     @Override
