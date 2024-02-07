@@ -4,15 +4,14 @@ public class Zatikia  {
     private int b;
 
      Zatikia(int a, int b) throws ZatikiSalbuespena{
-       try {
-           if (b==0) {
+         if (b==0) {
                throw new ZatikiSalbuespena("Ezin da zatitzaile bezala zero duen zatikia sortu");
-           }
+         }
            this.a = a;
            this.b = b;
-       }catch (ZatikiSalbuespena e){
-           System.err.println("Errorea="+e.getMessage());
-       }
+
+
+
     }
      Zatikia() {
         this.a = 1;
