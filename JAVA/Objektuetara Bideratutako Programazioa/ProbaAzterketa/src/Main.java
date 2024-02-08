@@ -1,14 +1,12 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
        Langilea l1= new Langilea("Julen", "Garcia", 19, "Readbull", Langilea.Lanmota.Ingeniaria);
     }
 
-    HashMap<String,Langilea> tadeak= new HashMap<>();
+
+    HashMap<String,HashSet<Langilea>> tadeak= new HashMap<>();
 
     private void erakutsi(){
         Scanner sc = new Scanner(System.in);
@@ -17,7 +15,7 @@ public class Main {
         System.out.println("1-Pilotoak     2-Ingeniariak       3-Zuzendariak");
         int aukera= sc.nextInt();
 
-        Iterator<Langilea> it= new
+
         switch (aukera){
             case 1:
 
@@ -37,8 +35,8 @@ public class Main {
         }
     }
 
-    private void gehitutaldea(Langilea langilea){
-
+    private void gehitutaldea(String taldea){
+        HashSet<Langilea> proba= new HashSet<>();
 
     }
 
@@ -53,7 +51,7 @@ public class Main {
     }
 
     private void gehitulangiletaldean(Langilea langilea){
-
+        tadeak.put(langilea.taldea,);
     }
 
 

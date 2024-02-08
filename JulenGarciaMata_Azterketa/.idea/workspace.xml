@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d1b48c-075e-47f8-8f26-f551c6faa344" name="Changes" comment="" />
+    <list default="true" id="a4d1b48c-075e-47f8-8f26-f551c6faa344" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../JAVA/Objektuetara Bideratutako Programazioa/Salbuespenen Kudeaketa/Ariketa7/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA/Objektuetara Bideratutako Programazioa/Salbuespenen Kudeaketa/Ariketa7/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2YZb6TtAaOA222xtPJNkmCmCOPW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -19,7 +21,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Ariketak/Programazioa/JulenGarciaMata_Azterketa/Ariketa9"
+    "last_opened_file_path": "D:/Ariketak/Programazioa/JAVA/Objektuetara Bideratutako Programazioa/ProbaAzterketa"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
