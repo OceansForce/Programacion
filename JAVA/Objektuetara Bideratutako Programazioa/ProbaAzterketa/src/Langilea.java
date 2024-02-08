@@ -23,9 +23,10 @@ public class Langilea {
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (this == object) return true;
-        if (!(object instanceof Langilea langilea)) return false;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Langilea langilea = (Langilea) o;
         return Objects.equals(taldea, langilea.taldea) && lanmota == langilea.lanmota;
     }
 
