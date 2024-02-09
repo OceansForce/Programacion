@@ -31,6 +31,9 @@ public class Main {
                    ma.gehitulangiletaldean(talizena,l1);
                    break;
                case 5:
+                   System.out.println("Zein lagile nahi duzu mugitu?");
+                   System.out.println("Zein taldeara?");
+                   ma.lagileaAldatu();
                    break;
                case 6:
                    bukatu=false;
@@ -58,24 +61,39 @@ public class Main {
         switch (aukera){
             case 1:
                 for(HashSet<Langilea> la: tadeak.values()){
-
-                    System.out.println(la);
-
-
+                    for (Langilea langilea : la) {
+                        if (langilea.getLanmota() == langilea.lanmota.Pilotoa && langilea.getTaldea().equals(taldea)) {
+                            System.out.println(la);
+                        }
+                    }
 
                 }
                 break;
             case 2:
+                for(HashSet<Langilea> la: tadeak.values()){
+                    for (Langilea langilea : la) {
+                        if (langilea.getLanmota() == langilea.lanmota.Ingeniaria && langilea.getTaldea().equals(taldea)) {
+                            System.out.println(la);
+                        }
+                    }
 
+                }
                 break;
 
             case 3:
+                for(HashSet<Langilea> la: tadeak.values()){
+                    for (Langilea langilea : la) {
+                        if (langilea.getLanmota() == langilea.lanmota.Zuzendaria && langilea.getTaldea().equals(taldea)) {
+                            System.out.println(la);
+                        }
+                    }
 
+                }
                 break;
         }
     }
 
-     void gehitutaldea(String taldea){
+    private void gehitutaldea(String taldea){
         tadeak.put(taldea, new HashSet<>());
     }
 
@@ -87,4 +105,15 @@ public class Main {
         tadeak.get(taldea).add(langilea);
     }
 
+    private void lagileaAldatu(Langilea langilea, String taldea){
+        Iterator<String> itKEY = tadeak.keySet().iterator();
+        while (itKEY.hasNext()){
+            String a= itKEY.next();
+            HashSet<Langilea> langileak= tadeak.get(a);
+            if (langileak.contains(langilea)){
+                tadeak.get(taldea).add(langilea);
+                tadeak.get(a).remove(langilea);
+            }
+        }
+    }
 }

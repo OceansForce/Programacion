@@ -23,21 +23,24 @@ public class Langilea {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Langilea langilea = (Langilea) o;
-        return Objects.equals(taldea, langilea.taldea) && lanmota == langilea.lanmota;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Langilea langilea)) return false;
+        return Objects.equals(getTaldea(), langilea.getTaldea());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(taldea, lanmota);
+        return Objects.hash(getTaldea());
     }
 
 
     public Lanmota getLanmota() {
         return lanmota;
+    }
+
+    public String getTaldea() {
+        return taldea;
     }
 
     @Override
