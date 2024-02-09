@@ -58,10 +58,11 @@ public class Main {
         switch (aukera){
             case 1:
                 for(HashSet<Langilea> la: tadeak.values()){
+
                     System.out.println(la);
-                    if (la.equals(taldea) && la.equals(Langilea.Lanmota.Pilotoa)){
-                    System.out.println(la);
-                    }
+
+
+
                 }
                 break;
             case 2:
@@ -86,10 +87,4 @@ public class Main {
         tadeak.get(taldea).add(langilea);
     }
 
-    @Override
-    public String toString() {
-        return "Main{" +
-                "tadeak=" + tadeak.values()+
-                '}';
-    }
 }

@@ -34,4 +34,20 @@ public class Langilea {
     public int hashCode() {
         return Objects.hash(taldea, lanmota);
     }
+
+
+    public Lanmota getLanmota() {
+        return lanmota;
+    }
+
+    @Override
+    public String toString() {
+        return "Langilea{" +
+                "izena='" + izena + '\'' +
+                ", abizena='" + abizena + '\'' +
+                ", adina=" + adina +
+                ", taldea='" + taldea + '\'' +
+                ", lanmota=" + lanmota +
+                '}';
+    }
 }
