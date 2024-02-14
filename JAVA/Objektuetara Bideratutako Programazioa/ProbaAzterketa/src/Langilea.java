@@ -39,6 +39,10 @@ public class Langilea {
         return lanmota;
     }
 
+    public void setLanmota(Lanmota lanmota) {
+        this.lanmota = lanmota;
+    }
+
     public String getTaldea() {
         return taldea;
     }
