@@ -9,13 +9,37 @@ public class AgendaKudeatzailea {
 
     void erakutsi() throws IOException {
 
-        BufferedReader br= new BufferedReader(new FileReader(".\\"+Fitx_izena));
+        BufferedReader br= new BufferedReader(new FileReader(".\\"+Fitx_izena+".txt"));
         String textua= br.readLine();
-        while ()
+        while (textua != null){
+            System.out.println(textua);
+            textua= br.readLine();
+        }
+        br.close();
 
     }
     void gehitupertsona(Pertsona per) throws IOException {
-       FileWriter fw1= new FileWriter(".\\"+Fitx_izena);
-       fw1.write(String.valueOf(per));
+        BufferedWriter fw1= new BufferedWriter(new FileWriter(".\\"+Fitx_izena+".txt", true));
+        fw1.write(String.valueOf(per));
+        fw1.close();
+    }
+
+    String pertsonaBilatu(String pertsona) throws IOException {
+
+        FileReader fr=new FileReader(".\\"+Fitx_izena+".txt");
+        BufferedReader bw= new BufferedReader(fr);
+        String textua= bw.readLine();
+
+        while (textua != null) {
+            String[] arraya= textua.split("\t");
+
+            if (arraya[0].equals("izena=" + pertsona)) {
+                return textua;
+            }
+            textua=bw.readLine();
+        }
+        bw.close();
+        fr.close();
+        return null;
     }
 }
