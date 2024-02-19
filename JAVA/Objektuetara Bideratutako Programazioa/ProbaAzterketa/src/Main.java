@@ -131,7 +131,7 @@ public class Main {
     }
 
     // Langilea metodo barruan sortzen
-    /*private void gehitulangiletaldean(){
+    private void gehitulangiletaldean(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Izena idatzi:");
@@ -191,10 +191,10 @@ public class Main {
         }catch (Exception e){
             System.err.println(e.getMessage());
         }
-    }*/
+    }
 
     // Langilea lenagotik sartzen
-    private void gehitulangiletaldean(Langilea la){
+    /*private void gehitulangiletaldean(Langilea la){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Taldearen izena?");
@@ -243,5 +243,5 @@ public class Main {
         }catch (Exception e){
             System.err.println(e.getMessage());
         }
-    }
+    }*/
 }
