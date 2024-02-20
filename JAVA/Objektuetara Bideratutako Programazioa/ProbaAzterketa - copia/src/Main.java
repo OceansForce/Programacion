@@ -132,6 +132,10 @@ public class Main {
 
     private void lagileaAldatu(){
         Scanner sc = new Scanner(System.in);
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         String taldeak2=null;
         Langilea la2=null;
         System.out.println("Langilearen izena?");
