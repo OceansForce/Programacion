@@ -132,7 +132,6 @@ public class Main {
 
     private void lagileaAldatu(){
         Scanner sc = new Scanner(System.in);
-        String taldea2=null;
         String taldeak2=null;
         Langilea la2=null;
         System.out.println("Langilearen izena?");
