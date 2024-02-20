@@ -14,9 +14,9 @@ public class Pertsona {
 
 
     public String toString() {
-        return "izena=" + izena + "\t" +
-                "telefonoa=" + telefonoa + "\t" +
-                "herria=" + herria + "\n";
+        return izena + "\t" +
+                telefonoa + "\t" +
+                herria + "\n";
     }
 
     @Override

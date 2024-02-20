@@ -1,5 +1,7 @@
 import java.io.*;
 
+import static java.lang.Long.parseLong;
+
 public class AgendaKudeatzailea {
     private String Fitx_izena;
 
@@ -32,7 +34,7 @@ public class AgendaKudeatzailea {
         }
     }
 
-    String pertsonaBilatu(String pertsona) throws IOException {
+    Pertsona pertsonaBilatu(String pertsona) throws IOException {
         try {
 
             FileReader fr = new FileReader(".\\" + Fitx_izena + ".txt");
@@ -42,8 +44,8 @@ public class AgendaKudeatzailea {
             while (textua != null) {
                 String[] arraya = textua.split("\t");
 
-                if (arraya[0].equals("izena=" + pertsona)) {
-                    return textua;
+                if (arraya[0].equals(pertsona)) {
+                    return new Pertsona(arraya[0], parseLong(arraya[1]), arraya[2]);
                 }
                 textua = bw.readLine();
             }
