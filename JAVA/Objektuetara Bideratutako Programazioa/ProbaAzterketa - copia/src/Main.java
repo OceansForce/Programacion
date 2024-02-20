@@ -146,13 +146,12 @@ public class Main {
         System.out.println("Zein taldetara nahi duzu aldatu?");
         String taldeberria= sc.next();
 
-
-
         ArrayList<Langilea> langileak= tadeak.get(taldezarra);
         Iterator<Langilea> it= langileak.iterator();
         while (it.hasNext() && !bai){
             Langilea la= it.next();
             if (la.getIzena().equals(izena) && la.getAbizena().equals(abizena) && la.getAdina()==adina){
+                la.setTaldea(taldeberria);
                 langilea=la;
                 bai=true;
             }
@@ -160,6 +159,7 @@ public class Main {
         if (bai && langilea!=null) {
             tadeak.get(taldeberria).add(langilea);
             tadeak.get(taldezarra).remove(langilea);
+
         }else {
             System.out.println("Langilea ez da aurkitu");
         }
