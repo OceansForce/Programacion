@@ -51,7 +51,7 @@ public class Main {
 
         //Aurreneko bi taldeak:
         tadeak.put("A", new ArrayList<>());
-        tadeak.put("ReadBull", new ArrayList<>());
+        tadeak.put("B", new ArrayList<>());
     }
 
     public  void erakutsi(){
@@ -132,35 +132,40 @@ public class Main {
 
     private void lagileaAldatu(){
         Scanner sc = new Scanner(System.in);
-<<<<<<< Updated upstream
-=======
+        Langilea langilea=null;
+        boolean bai=false;
 
->>>>>>> Stashed changes
-        String taldeak2=null;
-        Langilea la2=null;
         System.out.println("Langilearen izena?");
         String izena= sc.next();
         System.out.println("Langilearen abizena?");
         String abizena= sc.next();
         System.out.println("Langilearen adina?");
         int adina= sc.nextInt();
-
+        System.out.println("Langilearen Taldea?");
+        String taldezarra= sc.next();
         System.out.println("Zein taldetara nahi duzu aldatu?");
-        String taldea= sc.next();
+        String taldeberria= sc.next();
 
-        for (String taldeak :tadeak.keySet()){
-            ArrayList<Langilea> langileak= tadeak.get(taldeak);
-            for (Langilea la : langileak){
-                if (la.getIzena().equals(izena) && la.getAbizena().equals(abizena) && la.getAdina()==adina){
-                     taldeak2=taldeak;
-                     la2=la;
-                }
+
+
+        ArrayList<Langilea> langileak= tadeak.get(taldezarra);
+        Iterator<Langilea> it= langileak.iterator();
+        while (it.hasNext() && !bai){
+            Langilea la= it.next();
+            if (la.getIzena().equals(izena) && la.getAbizena().equals(abizena) && la.getAdina()==adina){
+                langilea=la;
+                bai=true;
             }
         }
+        if (bai && langilea!=null) {
+            tadeak.get(taldeberria).add(langilea);
+            tadeak.get(taldezarra).remove(langilea);
+        }else {
+            System.out.println("Langilea ez da aurkitu");
+        }
 
-        tadeak.get(taldea).add(la2);
-        tadeak.get(taldeak2).remove(la2);
     }
+
 
     // Langileak metodo barruan sortzen dira
     private void gehitulangiletaldean(){
