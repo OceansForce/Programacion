@@ -5,7 +5,7 @@ public class Langilea {
     private String abizena;
     private int adina;
 
-    String taldea;
+    private String taldea;
 
     enum Lanmota{
         Pilotoa,
