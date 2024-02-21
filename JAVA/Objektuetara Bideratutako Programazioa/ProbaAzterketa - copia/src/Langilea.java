@@ -59,6 +59,10 @@ public class Langilea {
         return taldea;
     }
 
+    public void setTaldea(String taldea) {
+        this.taldea = taldea;
+    }
+
     @Override
     public String toString() {
         return "izena='" + izena + '\'' +
