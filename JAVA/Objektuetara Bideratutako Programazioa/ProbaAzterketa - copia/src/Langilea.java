@@ -63,6 +63,7 @@ public class Langilea {
         this.taldea = taldea;
     }
 
+
     @Override
     public String toString() {
         return "izena='" + izena + '\'' +
