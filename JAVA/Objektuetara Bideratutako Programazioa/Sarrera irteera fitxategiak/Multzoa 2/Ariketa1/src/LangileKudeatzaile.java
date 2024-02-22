@@ -47,6 +47,10 @@ public class LangileKudeatzaile {
     }
 
     void sortuMugikorrenFitxategia (String bidea) throws IOException, ClassNotFoundException {
+
+        FileWriter fw=null;
+        fw= new FileWriter(bidea);
+
         FileOutputStream fos = new FileOutputStream(bidea,true);
         ObjectOutputStream oos= new ObjectOutputStream(fos);
 
@@ -55,7 +59,7 @@ public class LangileKudeatzaile {
 
         Object irakurriobjetuak = ois.readObject();
         while (irakurriobjetuak != null) {
-            Langile langileak = (Langile) ois.readObject();
+            Langile langileak = (Langile) irakurriobjetuak;
 
                 ois.close();
 

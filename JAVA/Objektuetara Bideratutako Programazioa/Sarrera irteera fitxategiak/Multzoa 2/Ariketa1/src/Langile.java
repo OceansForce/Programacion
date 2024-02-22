@@ -29,6 +29,10 @@ public class Langile implements Serializable {
         return izena;
     }
 
+    public Mugikor getMugikorra() {
+        return mugikorra;
+    }
+
     @Override
     public String toString() {
         return  izena+ "\t" + soldata +
