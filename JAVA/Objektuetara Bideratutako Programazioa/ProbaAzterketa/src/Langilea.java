@@ -5,9 +5,9 @@ public class Langilea {
     private String abizena;
     private int adina;
 
-    String taldea;
+    private String taldea;
 
-    enum Lanmota{
+    public enum Lanmota{
         Pilotoa,
         Ingeniaria,
         Zuzendaria;
@@ -34,8 +34,20 @@ public class Langilea {
         return Objects.hash(getTaldea());
     }
 
+    public String getIzena() {
+        return izena;
+    }
+
+    public String getAbizena() {
+        return abizena;
+    }
+
+    public int getAdina() {
+        return adina;
+    }
 
     public Lanmota getLanmota() {
+
         return lanmota;
     }
 
@@ -47,14 +59,17 @@ public class Langilea {
         return taldea;
     }
 
+    public void setTaldea(String taldea) {
+        this.taldea = taldea;
+    }
+
+
     @Override
     public String toString() {
-        return "Langilea{" +
-                "izena='" + izena + '\'' +
-                ", abizena='" + abizena + '\'' +
-                ", adina=" + adina +
-                ", taldea='" + taldea + '\'' +
-                ", lanmota=" + lanmota +
-                '}';
+        return izena + '\'' +
+                abizena + '\'' +
+                adina +
+                taldea + '\'' +
+                lanmota;
     }
 }

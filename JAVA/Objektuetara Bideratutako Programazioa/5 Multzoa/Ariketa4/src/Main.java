@@ -1,3 +1,4 @@
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -9,12 +10,18 @@ public class Main {
 
         Instant orduaHasiera= Instant.now();
         ArrayList<Integer> zen = new ArrayList<>();
-        ausazkoZenbakia(zen, 5000);
-        bubbleSort(zen);
+        ausazkoZenbakia(zen, 10);
         for (int a: zen){
             System.out.print(a+"-");
         }
         System.out.println("\n");
+
+        CocktailShakerSort(zen);
+        for (int a: zen){
+            System.out.print(a+"-");
+        }
+        System.out.println("\n");
+
         elementuakTrukatu(zen,0,2);
         for (int a: zen){
             System.out.print(a+"-");
@@ -25,7 +32,7 @@ public class Main {
 
     }
 
-    public static void bubbleSort(ArrayList<Integer> zen) {
+    public static void CocktailShakerSort(ArrayList<Integer> zen) {
         int n = zen.size();
         for (int a=0 ; a<n-1; a++) {
             for (int b = 0; b < n - a - 1; b++) {
@@ -33,6 +40,13 @@ public class Main {
                     int h= zen.get(b);
                     zen.set(b, zen.get(b + 1));
                     zen.set(b + 1, h);
+                }
+            }
+            for (int c = n-1; c >0; c--) {
+                if (zen.get(c-1) > zen.get(c)) {
+                    int h= zen.get(c);
+                    zen.set(c-1, zen.get(c));
+                    zen.set(c, h);
                 }
             }
         }

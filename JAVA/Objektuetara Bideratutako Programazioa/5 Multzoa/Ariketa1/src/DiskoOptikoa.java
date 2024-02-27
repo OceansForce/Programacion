@@ -1,4 +1,4 @@
-public abstract class DiskoOptikoa extends Garapen_Diskoak{
+public abstract class DiskoOptikoa extends Biltegiratzea_Diskoak {
 
 
     public boolean birgrabagarria;

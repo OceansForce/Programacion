@@ -1,2 +1,7 @@
-public class Frisbee {
+public class Frisbee implements Diskoa {
+
+    @Override
+    public void biratu() {
+
+    }
 }
