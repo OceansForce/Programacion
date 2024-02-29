@@ -9,14 +9,15 @@ public class Main {
         File f2 = new File(".\\Ariketa2_fitx2.txt");
         File f3 = new File(".\\Ariketa2_fitx3.txt");
 
-        FileWriter fileWriter = new FileWriter(".\\Ariketa2_fitx1.txt", true);
-        BufferedWriter bw = new BufferedWriter(fileWriter);
-        for (int i = 0; i < 10; i++) {
-            bw.write(Integer.toString(i));
-            bw.newLine();
-        }
 
-        bw.close();
+        BufferedWriter bw1 = new BufferedWriter(new FileWriter(f2));
+        BufferedWriter bw2 = new BufferedWriter(new FileWriter(f3));
+        BufferedReader br= new BufferedReader(new FileReader(f1));
+        bw1.write(br.readLine());
+        char[] array= new char[br.read()];
+        bw2.write( br.read(array, 0, 5));
+
+        bw1.close();
        try {
            BufferedReader fitx1 = new BufferedReader(new FileReader(".\\Ariketa2_fitx1.txt"));
 
