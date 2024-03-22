@@ -36,7 +36,6 @@ public class Interfazea extends JFrame implements ActionListener {
         p1= new JPanel (new FlowLayout(FlowLayout.CENTER));
         p1.setPreferredSize(new Dimension(400,500));
 
-
         String[] arrayFITXA = {"Java","Python","C",};
 
         aukeraKAXA= new JComboBox(arrayFITXA);
