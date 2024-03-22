@@ -43,7 +43,14 @@ public class Interfazea extends JFrame implements ActionListener {
         aukeraKAXA.addActionListener(this);
 
         b1= new JButton("Clear");
-        b1.addActionListener(this);
+        b1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource()== b1){
+                    ta1.setText("");
+                }
+            }
+        });
 
         p1.add(aukeraKAXA);
         p1.add(b1);
@@ -92,9 +99,8 @@ public class Interfazea extends JFrame implements ActionListener {
                     ta1.append(datuak+"\n");
                 }
                 br1.close();
-            }
-            if (e.getSource()== b1){
-                ta1.setText("");
+            } else if (e.getSource()== b2) {
+                this.dispose();
             }
         }catch (FileNotFoundException ex) {
             JOptionPane.showConfirmDialog(null,"Fitxategia ez da existitzen", "Errorea", JOptionPane.INFORMATION_MESSAGE);
